@@ -144,7 +144,7 @@ export default function Projects() {
 
 				<ProjectCard colSpan={2} rowSpan={2} project={projects.vctryprep} />
 				<ProjectCard colSpan={1} rowSpan={3} project={projects.ballista} />
-				<ProjectCard colSpan={2} rowSpan={2} project={projects.antimalarialRamanSpectrometer} />
+				<ProjectCard colSpan={2} rowSpan={2}/> {/* project={projects.antimalarialRamanSpectrometer} /> */}
 				<ProjectCard colSpan={1} rowSpan={3} />
 				<ProjectCard colSpan={1} rowSpan={2} project={projects.satUnlimited} />
 				<ProjectCard colSpan={1} rowSpan={1} project={projects.ascent} />
