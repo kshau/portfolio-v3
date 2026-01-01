@@ -47,12 +47,12 @@ export function Navbar() {
 		<nav className="fixed lg:top-8 left-1/2 z-100 transform -translate-x-1/2">
 
 			<div
-				className={`flex flex-wrap justify-between liquid-glass rounded-full shadow-lg p-1 lg:gap-1 animation-fade-in opacity-0 transition-colors w-[93vw] lg:w-fit`}
+				className={`flex flex-row justify-between liquid-glass rounded-full shadow-lg p-1 gap-1 animation-fade-in opacity-0 transition-colors`}
 				style={{ animationDelay: "0.8s" }}
 			>
 				{links.map((link, index) => {
 
-					const isActive = link.sectionId === activeSectionId
+					const isActive = link.sectionId === activeSectionId;
 
 					return (
 						<Link
