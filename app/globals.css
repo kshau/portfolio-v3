@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -10,13 +10,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -39,6 +32,7 @@ html {
     transform: rotate(3deg);
     transform-origin: top left;
   }
+
   to {
     filter: blur(0px);
     opacity: 1;
@@ -57,6 +51,7 @@ html {
     transform-origin: center center;
     scale: 1;
   }
+
   to {
     transform: rotate(14deg);
     transform-origin: center center;
@@ -71,6 +66,9 @@ html {
 }
 
 /* Prevent horizontal scrollbar from overflowing children */
-html, body, #__next, main {
+html,
+body,
+#__next,
+main {
   overflow-x: hidden;
 }
