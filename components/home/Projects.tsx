@@ -51,8 +51,7 @@ function ProjectCard({ colSpan, rowSpan, project }: ProjectCardProps) {
 	return (
 		<div
 			ref={ref as any}
-			className={`relative rounded-xl border! border-white/15! ${colSpanMap[colSpan]} ${rowSpanMap[rowSpan]} opacity-0 ${visible && "animation-fade-in"} overflow-hidden ${project.demoURL && "hover:cursor-pointer"}`}
-			onClick={() => { if (project.demoURL) window.open(project.demoURL) }}
+			className={`relative rounded-xl border! border-white/15! ${colSpanMap[colSpan]} ${rowSpanMap[rowSpan]} opacity-0 ${visible && "animation-fade-in"} overflow-hidden `}
 		>
 			<Image
 				src={project.bannerURL}
